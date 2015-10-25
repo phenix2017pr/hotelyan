@@ -1,0 +1,14 @@
+/*
+ * Wolf CMS - Content Management Simplified. <http://www.wolfcms.org>
+ * Copyright (C) 2008 Philippe Archambault <philippe.archambault@gmail.com>
+ *
+ * This file is part of Wolf CMS. Wolf CMS is licensed under the GNU GPLv3 license.
+ * Please see license.txt for the full license text.
+ */
+
+.tabs .tab a {
+    background-color: #dcdcdc;
+}
+
+h1 { color: #fff; background-color: #483e37; text-shadow: -1px 2px 3px #111; }
+h1 a { color: #fff; }

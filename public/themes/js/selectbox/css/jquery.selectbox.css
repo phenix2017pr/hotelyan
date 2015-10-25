@@ -1,0 +1,119 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	background-color: #FFFFFF;
+	
+	font-size: 14px;
+	font-weight: normal;
+	height: 26px;
+	position: relative;
+	width: 150px;
+	border-radius:2px;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 26px;
+	left: 0;
+	line-height: 26px;
+	outline: none;
+	overflow: hidden;
+	position: absolute !important;
+	text-indent: 10px;
+	top: 0;
+	width: 90px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #6c0032;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(../img/select-icons-new.png) 0 -118px no-repeat;
+	display: block ;
+	height: 20px;
+	outline: none;
+	position: absolute !important;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+.sbToggle:hover{
+	background: url(../img/select-icons-new.png) 0 -167px no-repeat;
+}
+.sbToggleOpen{
+	background: url(../img/select-icons-new.png) 0 -18px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(../img/select-icons-new.png) 0 -66px no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #e1e1e1;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background: #FFFFFF;
+	border:none;
+	list-style: none;
+	left: -50px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:6px solid #d7d7d7;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 26px;
+	width: 150px;
+	z-index: 1;
+	overflow-y:none;
+}
+.sbOptions li{
+	padding: 0px 0px !important;
+}
+.sbOptions a{
+	border-bottom:none;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #6c0032;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #6c0032;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #e1e1e1;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-top:1px solid #7b1642;
+	color: #6e6e6e;
+	text-transform:capitalize;
+	display: block;
+	font-weight: normal;
+	padding: 7px 0 0px 10px;
+	font-size:16px;
+}
+.sbGroup:first{
+	border-top:none !important;	
+}
+.sbOptions .sbSub{
+	/*padding-left: 17px;*/
+}

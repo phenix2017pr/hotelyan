@@ -1,0 +1,19 @@
+/* IE7: reset rtl list margin. (#7334) */
+ol,ul,dl { *margin-right:0px; padding:0 40px; }
+
+/* Customize below this line */
+body { font: 13px/1.5 Arial, Verdana, sans-serif; color: #242424; background-color: #fefefe }
+
+/* justifyClasses example */
+p.left { text-align:left }
+p.centered { text-align:center }
+p.right { text-align:right }
+p.justify { text-align:justify }
+
+/* styleSets example */
+div.cabecera { clear:both; display:block; text-align:center }
+.cabecera img { clear:both; display:block; margin:0 auto 8px }
+p.intro { background-color: #f8f8f8; font-size: 1.153846em }
+img.img-left { float:left; margin: 0 10px 0 0 }
+img.img-center { clear:both; margin: 10px 0 }
+img.img-right { float:right; margin: 0 0 0 10px }

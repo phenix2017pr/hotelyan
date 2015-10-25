@@ -1,0 +1,129 @@
+If you need to develop plugins for ckeditor(editor) that require data from Wolf or Wolf's database
+you can use custom routes and CkeditorPluginsController for support. So here's a quick explanation of
+how to use build the php part, for ckeditor plugin development check ckeditor docs.
+
+File/Folders you'll use:
+========================
+
+    PHP
+    --------
+    Add Routes
+        index.php
+
+    Define action(and support function) that renders the data you need
+        CkeditorPluginsController.php
+
+    A folder for your Views
+        views/wolf_plugins/my_plugin/
+
+    Your view file(s)
+        views/wolf_plugins/my_plugin/my_plugin_script_view.php
+        views/wolf_plugins/my_plugin/my_plugin_iframe_view.php
+
+    Javascript
+    ----------
+    Your plugin folder
+        scripts/wolf_plugins/my_plugin/
+
+    And files
+        scripts/wolf_plugins/my_plugin/plugin.js
+        scripts/wolf_plugins/my_plugin/dialogs/
+        scripts/wolf_plugins/my_plugin/dialogs/my_plugin.js
+
+
+Adding Routes
+=============
+
+    Routes should be defined as:
+        $CKPLUGINS_URI.'my_plugin.js'
+
+    Mapped to a destination (controller/action), like:
+        'ckeditor_plugins/my_plugin_action'
+
+    And add it in 'index.php' file, after wolf_pages:
+
+        Dispatcher::addRoute(array(
+            $CKPLUGINS_URI.'wolf_pages.js' => 'ckeditor_plugins/wolf_pages',
+            $CKPLUGINS_URI.'my_plugin.js' => 'ckeditor_plugins/my_plugin_action',
+        ));
+
+    After you define the action in CkeditorPluginsController, to see if it is working correctly,
+    you can check in a new window in your browser with the following url:
+
+        http://www.yoursite.com/wolf/plugins/ckeditor/plugins/my_plugin.js
+
+
+Adding an action to the CkeditorPluginsController
+================================================
+
+    Defining the destination of your custom route
+        'ckeditor_plugins/my_plugin_action'
+    
+    Defining the action
+
+        public function my_plugin_action() {
+            $data = //fetch data
+            // or
+            $data = $this->_my_plugin_support_function();
+    
+            header("Content-type: application/x-javascript; charset=utf8");
+            // Display our data with the view in 'views/wolf_plugins/my_plugin/my_plugin_view.php'
+            $this->display('my_plugin/my_plugin_view', array('data' => $data));
+        }
+
+    If you need you can define a support method to fetch/process your data
+    and use it inside your plugin_action
+
+        private function _my_plugin_support_function() {
+            $pdo = Record::getConnection();
+            $sql = ....
+            return $data;
+        }
+
+    Now that you have defined your action and added your route,
+    you should see if the output is rendering correctly:
+
+        http://www.yoursite.com/wolf/plugins/ckeditor/plugins/my_plugin.js
+
+
+Javascript
+==========
+
+    Since your 'wolf ckeditor plugin' probably needs to load the data from the custom route you added for your 'fake' script,
+    Ckeditor allows loading of plugins from 'external' sources, but you'll need the full url, so you can use the following
+    variable:
+
+        CKFilter.wolfPluginsRoute;
+
+    which will return the full base path:
+
+        http://www.yoursite.com/wolf/plugins/ckeditor/plugins/
+
+    So, you can use it like this:
+        var pluginsRoute = CKFilter.wolfPluginsRoute;
+
+        // Load our wolf data
+        CKEDITOR.scriptLoader.load( pluginsRoute + 'my_plugin.js' ); 
+
+    Finally to use to new plugin you'll need to add it to 'scripts/user/config.js', first by
+    telling CKEditor to load it, by appending it to the top anonymous function in config.js:
+
+        (function() {
+            var pluginsPath = CKFilter.getPluginsPath() || false;
+            if(pluginsPath) {
+                CKEDITOR.plugins.addExternal('wolf_pages', pluginsPath + 'wolf_pages/', 'plugin.js');
+                CKEDITOR.plugins.addExternal('my_plugin', pluginsPath + 'my_plugin/', 'plugin.js');
+            }
+        })();
+
+    B.T.W, the CKFilter.getPluginsPath() function you see, returns the path to the plugin javascript file
+    not the Dispatcher route that loads the data for your plugin:
+
+        http://www.yoursite.com/wolf/plugins/ckeditor/scripts/wolf_plugins/
+        
+    And then enabling it, in extraPlugins:
+        ...
+        extraPlugins : 'wolf_pages,my_plugin',
+        ...
+
+FIN

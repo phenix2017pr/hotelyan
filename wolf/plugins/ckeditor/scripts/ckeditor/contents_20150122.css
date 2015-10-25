@@ -1,0 +1,17 @@
+/* IE7: reset rtl list margin. (#7334) */
+li { margin-left: 15px; }
+
+/* Customize below this line */
+body { font-family: 'Times New Roman', Garamond; color: #5e5e5e; font-size: 14px; line-height:1.5; }
+
+h1 { color:#293f58; letter-spacing: 5px; font-size: 45px; font-weight: normal; line-height: 1; }
+h3 { color:#000; font-size: 18px; }
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+.label { color:#293f58; font-weight: bold; float: left; clear: both;}
+.colon { color:#293f58; float: left; padding: 0px 5px; font-weight: bold;}
+.text { float: left; }
+.no-clear{ clear: none; }

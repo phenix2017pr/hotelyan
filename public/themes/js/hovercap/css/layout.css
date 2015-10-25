@@ -1,0 +1,27 @@
+
+/**
+ * example
+ */
+
+.example__img {}
+.example__caption {
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/**
+ * copy
+ */
+.copy {
+  font-size: 87.5%;
+  text-align: center;
+  margin: 30px 0;
+}

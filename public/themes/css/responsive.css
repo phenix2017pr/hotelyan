@@ -1,0 +1,748 @@
+html {
+	-webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+	width: 100%;
+	height: auto;
+}
+
+
+
+@media only screen and (max-width: 1310px) {
+	#booking-wrapper { display:block; }
+	.laptop-only{
+		display:block;
+	}
+	.mobile-only{
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	/*Home Page*/
+	#content{
+		background:#FFFFFF;
+	}
+	.homepage{
+		max-width:700px;
+		margin:auto;
+	}
+	.home-slider{
+		float:none;
+		margin:auto auto 2px auto;
+		height:auto;
+		/*text-align: center;*/
+		padding:0px;
+	}
+	.home-slider-wrap,.home-slider-right{
+		width:100%;
+		/*float:none;*/
+		margin:auto auto 2px auto;
+	}
+	.home-content-main{
+		height: 345px;
+		padding:15px 0px 15px 0px;
+		margin:auto auto 2px auto;
+		float:left;
+		width:49.9%;
+	}
+	.logo-img{
+		top:0px;
+	}
+	.home-main-content{
+		top:0px;
+	}
+	.home-main-inner{
+		width:96%;
+		padding:30px 2%;
+	}
+	#home-studio{
+		height:375px;
+		float:right;
+		width:49.9%;
+	}
+	.desc_img{
+		height:100%;
+	}
+	.description-full .inner{
+		max-height:400px;
+	}
+
+	/* Attraction */
+	#attraction-list{ width:100%; margin:auto; text-align: center }
+	#attraction-list .album-cover  > div { max-width:272px; }
+
+	/* Room */
+	#col-full-room-section{
+		width:100%;
+		margin:0 auto;	
+	}
+	.col-full-room{
+		/*height:550px;	*/
+	}
+	.col-full-room:first-child{
+		/*height:580px !important;*/
+	}
+
+	.col-room-half{
+		width:100%;
+		float:none;
+		/*height:345px;*/
+		position:absolute;
+		top:445px;	
+	}
+	.slick-slide img{
+		height:auto !important;
+	}
+	.room-content{
+		bottom:inherit;
+		/*top:65px;*/
+	}
+	.first-content .room-content{
+		bottom:inherit;
+		/*top:95px;*/
+	}
+	.room-inner{
+		bottom:inherit;
+		/*top:65px;*/
+	}
+	.first-content .room-inner{
+		bottom:inherit;
+		/*top:95px;*/
+	}
+
+	/** Lcation **/
+	.accordion{ display: block; }
+	#desktop-tab{ display:none; }
+
+}
+
+@media only screen and (max-width: 1060px) {
+
+	/* Mobile Menu */
+	header {margin-top: 0px;height:0px;}
+
+	#logo{ display:block; margin:0px; }
+	#logo a{ display:inline-block; float:left; padding:0px; }
+	#logo img{ 	max-width:100%;width:100%; height: auto; }
+
+	.top-social{  float:right;  max-width:100%; width:auto; }
+	nav {margin-top:0px;background:#ffffff;}
+	nav .wrap-nav{top: 0px; }
+	nav a{ font-size:90% !important;}
+	/* Mobile Menu */
+	#hotel-list{
+		right:40px;	
+	}
+	
+	/* Home Slider */
+	#slider-banner{  }
+	.theme-default .nivoSlider {
+		max-width:100% !important;
+		width:100% !important;
+		height:auto !important;
+	}
+	.theme-default a.nivo-nextNav , .theme-default a.nivo-prevNav{ top:35%;}
+	.nivo-caption {
+		position:absolute;
+		left:0 !important;
+		bottom:0 !important;
+		width:100% !important;
+		font-size:14px !important;
+		padding: 2px 6px !important;
+	}
+
+	/* Home page banner */
+	#banner-bg{
+		margin-top:-2px;	
+	}
+	.desc-title{
+		margin:15px 0px 15px 0px;
+	}
+
+	/* Booking Form */
+	.wrap-header{ z-index:1111; height:0px !important; }
+	#booking-wrapper{
+		background:none;
+		display:none;
+	}
+	.booking_close{
+		display:none;
+	}
+
+	#booking-form .amend{
+		text-align:center;
+		margin-top:10px;	
+	}
+	#booking-form {  
+		display:none;
+	}
+	.block02 { margin:0px; padding:5px;  }
+	
+	/*Footer*/
+	/*Footer*/
+	.footer-inner .left{ font-size:14px;text-align:center;float:none;width:100%; }
+	.footer-inner .right{ font-size:14px;text-align:center; float:none;width: 100% }
+	.footer-inner .left{
+		width:100%;
+	}
+	
+
+}
+
+@media only screen and (max-width: 969px) {
+	
+	/*Home Page*/
+	
+	#booking-click{
+		display:none;	
+	}
+	section{
+		top:0px;
+		margin-top:10px;
+	}
+	
+	
+	nav {margin-top:0px;}
+
+	#logo{ display:block; margin:auto !important; width:100%; text-align: center !important; }
+	#logo a{ 
+		display:block; 
+		max-width:84px; 
+		padding:0px; 
+		clear:both; 
+		top:2px;
+		left:10px;
+	}
+	#logo img{max-width:185px; height: auto;margin:auto }
+	
+	.menu{
+		width:625px;
+	}
+	.menu{
+		left:130px;	
+	}
+	/* .minimenu{display:block;} */
+	/* mobile menu */
+	.m-menu{display:none; }
+	#menu {
+		
+
+	   }
+	#menu ul{margin-top:2px;padding:0; z-index: 9999;}
+	#menu .span {
+		text-transform:uppercase; 
+		font-size:16px; 
+		padding:0px 0px 0px 0px; 
+		height:100%; 
+		line-height:30px; 
+		text-align:left;  
+		cursor: pointer; 
+		font-weight:bold;
+		display:block; 
+		color:#ffffff; 
+		width:100%; 
+		margin:0 0 0 0;  
+		clear:both;  
+	}
+	#menu .span img{ margin-top:3px; }
+	#menu > ul > li { float:none; padding:0px; display:none; }
+	#menu > ul > li.categories{display:block;}
+	#menu > ul > li.categories > a{display:none;}
+	#menu > ul > li.categories div.column:hover{ /*background:#FAFAFA;*/ text-decoration:none}
+	#menu > ul > li.categories div.column a{ text-decoration:none; color:#000000;}
+	#menu > ul > li.categories div.column a:hover{ text-decoration:none; }
+	#menu > ul > li.categories > div > .column > a{color:#a18f64!important; }
+	#menu > ul > li.categories > div{display:block; position:relative;}
+	
+	#menu > ul > li.categories > div > .column > div{display:none; position:relative; left:auto; }
+	#menu > ul > li.categories > div > .column:hover div{display:block; }
+	#menu > ul > li.categories > div > .column:hover > div ul{display:block; }
+	#menu > ul > li.categories > div > .column > div ul li + li{border-top:1px solid #eee;}
+	
+	#menu > ul { display:none; text-align:left; background:#fff!important; position:relative; z-index:9999;}
+	#menu > ul > li > div{display:block;}
+	#menu > ul > li.categories > div > .column > a{font-weight:bold;}
+	#menu > ul > li.categories > div > .column > div{display: none; box-shadow:none; border:none; padding:0; margin-left:20px;}
+	#menu > ul > li.categories > div > .column:hover div{display: none;}
+	span.more{color: #c2c2c2; display: block; font-weight: bold;  position: absolute; right: 0; top:0px; width: 30px; height: 30px; line-height:30px; font-size:20px; text-align:center; cursor:pointer; background:url(images/mplus.png) no-repeat left -50px;}
+	span.more.plus{background-position:0 -80px;}
+	/* mobile menu */
+
+	/*.album-cover { display:inline; display:inline-block; float:none;}*/
+
+	/*Room/Offer Page*/
+	.col-full-room:first-child{
+		/*height:650px !important;*/
+	}
+	.col-full-room{
+		/*height:620px;*/
+		margin-top:-50px;
+	}
+	
+	/*FnB Page*/
+	.fnb-wrap .inner{
+		padding-bottom:60px;
+	}
+
+	/*Footer*/
+	footer{
+		margin-top:-110px;
+		height:110px;
+	}
+
+	#gallery footer{ 
+		position: relative !important;
+		bottom:auto;
+		margin-top:-40px !important;
+		/*height:20px !important;*/
+	}
+	#gallery #slider-banner{ 
+		background:#FFFFFF !important;
+	} 
+}
+@media only screen and (max-width: 860px) {
+	.social_menu{
+		margin-right:20px;
+	}
+	.menu{
+		margin-left:20px;
+	}
+	#logo a{
+		margin-left:20px;
+		padding-left:20px;
+	}
+
+	/*Home Page*/
+	.dining-left{
+		float:right;
+		width:100%;
+	}
+	.dining-right{
+		float:left;
+		width:100%;
+		height:250px;
+	}
+	.dining-img{
+		width:auto;
+		height:250px;
+		float:none;
+		margin:0 auto;
+	}
+	.dining-right .inner{
+		padding:10px 50px 10px 50px;
+	}
+	.home-slider{
+		/*height:600px;*/
+	}
+	.home-content-main{
+		height:245px;
+	}
+	.home-main-inner{
+		padding:0px 2%;
+		font-size: 12px;
+	}
+	#home-studio{
+		height:275px;
+	}
+	.home-main-content{
+		/*top:55px;*/
+	}
+	.desc-title{
+		margin:12px 0px 10px 0px;
+	}
+	.description-full{
+		font-size: 12px;
+	}
+	.description-full .inner{
+		max-height:160px;
+	}
+	.content-readmore,.desc-book-now{
+		font-size: 12px
+	}
+
+	/*FnB Page*/
+	.fnb-left{
+		float:none;
+		width:100%;
+	}
+	.fnb-right{
+		float:none;
+		width:100%;
+	}
+	.fnb-slide{
+		margin:0px 10px 10px 10px;
+	}
+	.fnb-detail{
+		margin:20px 10px 10px 10px;
+		width:initial;
+	}
+
+	/*Contact Page*/
+	.contact-list{
+		float:none;
+		width:100%;
+	}
+	.contact-form{
+		float:none;
+		width:100%;
+	}
+	.contact-bg .fnb-detail{ width:90%; }
+
+}
+
+@media only screen and (max-width: 767px) {
+	/*Home Page*/
+	.home-slider{
+		float:none;
+		margin:auto;
+		height:auto;
+		/*text-align: center;*/
+		padding:0px;
+	}
+	.home-slider-wrap,.home-slider-right{
+		width:100%;
+		float:none;
+	}
+	.home-content-main{
+		height:auto;
+		padding:15px 0px 15px 0px;
+		float:none;
+		width:100%;
+	}
+	.logo-img{
+		top:0px;
+	}
+	.home-main-content{
+		top:0px;
+	}
+	.home-main-inner{
+		width:96%;
+		padding:0px 2%;
+	}
+	#home-studio{
+		height:375px;
+		float:none;
+		width:100%;
+	}
+	.desc_img{
+		height:100%;
+	}
+	.description-full .inner{
+		max-height:400px;
+	}
+
+	.m-menu{display:block; }
+
+	/*Special*/
+	.laptop-only{
+		display:none !important;
+	}
+	.mobile-only{
+		display:block !important;
+	}
+	
+	.room-content{
+		/*height:300px;*/
+		padding-bottom:10px;
+	}
+
+	.room-inner .desc{
+		line-height: 1.4em;
+		font-size:13px;
+	}
+
+	#home-topbanner{
+		margin-bottom:0px;	
+	}
+	/* -------------------------------------------- */
+	/* ------------------Header-------------------- */
+	.menu{
+		display:none;		
+	}
+	.logo-wrap #top-bg{
+		min-height:99px;
+	}
+	#logo a{
+		padding-left:0px;
+	}
+	
+	header {margin-top: 0px; }
+
+	/*Footer*/
+	footer{
+		margin-top:-120px;
+		height:120px;
+	}
+	
+}
+
+@media only screen and (max-width:660px){
+
+
+	/*Room/Offer Page*/
+	.col-full-room{
+		height:auto;	
+	}
+	.room-inner{
+		/*padding-top:60px;*/
+		width:100%;
+		float:none;
+		position:inherit;
+		/*top:30px !important;*/
+		bottom:initial;
+		height:auto;
+		/*padding-bottom:60px;*/
+	}
+	.first-content .room-inner{
+		width:100%;
+		/*padding-top:0px;*/
+		float:none;
+		position:inherit;
+		/*top:30px !important;*/
+		bottom:initial;
+		height:auto;
+		/*padding-bottom:60px;*/
+	}
+
+	.room-content{
+		width:100%;
+		/*height:260px;*/
+		float:none;
+		/*top:80px !important;*/
+		position:inherit;
+	}
+	.first-content .room-content{
+		width:100%;
+		/*height:260px;*/
+		float:none;
+		/*top:20px !important;*/
+		position:inherit;
+	}
+	.room-content .inner{
+		margin:0 auto !important;
+		top:0px;
+	}
+	#room-content-02 .inner{
+		margin:0 auto !important;
+	}
+	.col-full-room{
+		height:auto !important;
+		/*min-height:600px;*/
+		/*padding-bottom: 60px;*/
+		/*max-height:1000px;*/
+		/*margin-top:-65px;*/
+	}
+	.col-full-room:first-child{
+		height:auto !important;
+		/*min-height:630px;*/
+		/*max-height:1050px;*/
+		/*padding-bottom: 60px;*/
+	} 
+	.room-content .inner div{
+		background:none;
+	}
+	.inner-1{
+		padding:0px 30px 0px 30px !important;
+	}
+
+	.tbContactform .label-entry{ width:80px;font-size:12px; }
+	.tbContactform input[type=text]{ width:250px; }
+	.tbContactform textarea{  width:250px; }
+}
+
+@media only screen and (max-width: 600px) {
+	/*Home Page*/
+	.block12,.block01{
+		width:49.5% !important;	
+		margin-right:0px !important;
+		float:left;
+	}
+	.dining-title{
+		margin:0px 20px 10px 20px;
+	}
+	.dining-left .inner{
+		padding:10px 20px 10px 20px;
+	}
+	#home-dining-wrap{
+		padding-bottom:60px;
+	}
+	.dining-right .inner{
+		padding:10px 20px 10px 20px;
+	}
+
+	nav .wrap-nav {}
+	#logo a{
+		padding-top:5px;
+		margin-top:1px;
+	}
+	.logo-wrap #top-bg{
+		min-height:105px;
+	}
+
+	.title-border{ border-bottom:0px;  }
+	.page-title h2{ font-size:30px;margin:-22px auto 0px auto; padding:0px; }
+	.page-title h3{ font-size:20px;margin: -18px auto 0px auto; padding:0px; }
+	.page-title{ width:100%; text-align: center; margin-bottom:10px; }
+	.contact-bg .page-title{
+		width:90%;
+	}
+
+	/** Contact Us **/
+	.zerogrid .col-1-2{
+		width:100%;
+	}
+	h1.email-us{
+		width:100%;
+	}
+	.tbContactform{
+		width:100%;
+	}
+	.contact-bg .page-title {
+		margin-left:20px;
+		margin-right:20px;
+	}
+	.contact-list .inner{
+		margin-left:20px;
+		margin-right:20px;
+	}
+
+	/** Footer **/
+	.desktopmode{ display:none; }
+	.mobilemode { display:inline-block;}
+}
+
+@media only screen and (max-width:499px){
+
+	.fnb-wrap .inner{
+		margin:0px 20px 20px 20px;
+	}
+	.footer-menu{
+		right:20px;
+	}
+	.description-full .inner{
+		max-height:250px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	/* -------------------------------------------- */
+	/* ------------------Header-------------------- */	
+	header{text-align:center;background:#ffffff;}
+	/*header .wrap-header{height: 100%;}*/
+
+	#logo a{ 
+		text-align:center;
+		clear:both;
+		display:block;
+		float:none 
+	}
+
+	.room-slide-a img{
+		height:100%;	
+	}
+	
+	.offer-slide-div{
+		height:350px;	
+	}
+	.room-slide{
+		height:100%;
+		position:relative;	
+	}
+	.offer-slide-a{
+		height:290px;	
+	}
+	.room-slide-a{
+		position:relative;
+		height:auto;	
+	}
+	
+	/*Sub Page*/
+	.sub-wrap .inner{
+		/*margin:0px 20px 60px 20px;*/
+		padding-top:30px;
+	}
+	/* -------------------------------------------- */
+	/* -Room/Offer Page- */
+	.room-inner .inner-1{
+		padding:0px 8px 0px 8px !important;
+	}
+	/*contact Page*/
+	.contact-bg .page-title{
+		margin:10px auto 0px auto;
+	}
+	.map-slider{
+		margin-top:-40px !important;
+		top:0px !important;
+	}
+	.contact-bg{
+		padding-top:0px;
+	}
+
+	.sub-wrap .inner{ margin:0px 20px 0px 20px;}
+	.tbContactform td{ display: block; text-align: left; padding-bottom:5px;}
+	.tbContactform .label-entry{ text-align: left;  }
+	.tbContactform .semicol{ display: none; }
+	.tbContactform .field-entry{ margin-left:0px; }
+}
+
+
+@media only screen and (max-width: 424px) {
+	/*Home Page*/
+	.dining-img{
+		width:100%;
+		height:auto;
+		max-height:300px;
+	}
+
+	.departing-tab .ui-datepicker{ margin-left: -80px;}
+	.offer-slide-div,.offer-slide{
+		height:300px;	
+	}
+	.offer-slide-a{
+		height:240px;	
+	}
+	.room-content{
+		/*height:200px;	*/
+	}
+
+	/*Fnb Page*/
+	.fnb-detail .content{
+		padding:10px 3px;
+	}
+	.fnb-detail .row{
+		font-size:13px;
+	}
+
+	.slick-slide img{
+		/*width:96% !important;*/
+		height:100% !important;
+		/*max-width: 100%;*/
+		/*vertical-align: middle*/
+	}
+
+	/*Footer*/
+	footer{
+		height:130px;
+		margin-top:-120px;
+	}
+}
+@media only screen and (max-width: 399px) {	
+	
+	.block12,.block01{
+		width:100% !important;	
+		margin-right:0px !important;
+		float:none;
+	}	
+	.fnb-wrap .inner{
+		margin:0px 10px 20px 10px;
+	}
+	
+	.room-inner-content p{
+		font-size:14px;	
+		line-height:20px;
+	}
+	
+}

@@ -1,0 +1,27 @@
+
+
+.directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+	display:block;
+	background:url(img/bg-nav-btn.png);
+	width:80px; 
+	height:80px;
+	text-indent:-9999px;
+	border:0;
+	opacity: 1;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.nextNav a {
+	background-position:-160px 0px;
+	right:1%;
+}
+.prevNav a{
+	left:1%;
+	background-position:0px 0px;
+}

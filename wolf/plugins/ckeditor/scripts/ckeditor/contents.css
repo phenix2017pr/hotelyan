@@ -1,0 +1,154 @@
+@font-face{
+
+	font-family: "Avenir";
+
+	src: url('fonts/avenir/avenir.eot');
+
+	src: url('fonts/avenir/avenir.eot?#iefix') format('embedded-opentype'),
+
+	url('fonts/avenir/avenir.ttf') format('truetype'),
+
+	url('fonts/avenir/avenir.svg') format('svg');
+
+}
+
+
+
+/* IE7: reset rtl list margin. (#7334) */
+
+li { margin-left: 15px; }
+
+
+
+
+
+/* Customize below this line */
+
+body { font-family: Avenir, Arial, Helvetica, sans-serif; margin: 0; color: #313131; font-size: 0.95em; line-height:1.5; }
+
+
+
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0px; }
+
+/*h1 { color:#4e266f; font-size: 2.2em; line-height: 48px; font-weight: normal; margin: 12px 0 0; }*/
+
+h2 { font-size: 1.1em; font-weight: normal; color: #4e266f; line-height: 32px; margin: 0.6em 0; font-size:40px;}
+
+h3 { font-size: 1.1em; font-weight: normal; color: #4e266f; margin: .5em auto; padding: 0px;font-size:30px; }
+
+h4 { font-size: 1.1em; font-weight: normal; color: #4e266f; line-height: initial; }
+
+
+
+/* okstmtcc 20150305 */
+
+h1{ font-size:24px !important; color:#4e266f; line-height: 48px; font-weight: normal; margin: 12px 0 0; }
+
+
+
+ol, ul { margin-top: 0.2em; margin-bottom: 0.1em; margin-left: 5px;  padding: 0px; }
+
+p, li { line-height: 1.2; }
+
+p { font-size: 13px; margin: 0.9em 0em 1.2em; }
+
+div { font-size: 13px; line-height: 1.8; color: #313131; }
+
+
+
+ul li {
+
+    /*background: url(images/list-item-bg.png) no-repeat left 7px;*/
+
+    padding-left: 5px;
+
+    list-style-type: square;
+
+    font-size: 13px;
+
+    /*line-height: 1.8;*/
+
+}
+
+ol li {
+
+    /*background: url(images/list-item-bg.png) no-repeat left 7px;*/
+
+    padding-left: 5px;
+
+    list-style-type: decimal;
+
+    font-size: 13px;
+
+    /*line-height: 1.8;*/
+
+}
+
+
+
+a { color:#4e266f; text-decoration: none; }
+
+a:link { color: #4e266f; text-decoration: none; }
+
+a:visited { color: #4e266f; text-decoration: none; }
+
+a:hover { color: #000; }
+
+a img { border: none; }
+
+
+
+table { margin-top: 15px; border-spacing: 0; line-height: 1; }
+
+table tr.first { color: #4e266f; }
+
+table tr.first td { padding: 5px 12px; }
+
+table tr { background: #efece5; }
+
+table tr.odd { background: #fefefe; }
+
+table td.first-td { padding-left: 19px; width: 250px; text-align: left; }
+
+table td { padding: 16px 14px; font-size: 0.85em; }
+
+
+
+.two-colomn-wrapper { margin-top: 29px; }
+
+.two-colomn-wrapper .colomn { float: left; width: 50%; }
+
+
+
+.info-title { background: url(images/plus-ico.png) no-repeat right 11px #333; margin: 0 0 2px; padding: 3px 17px 2px; cursor: pointer; color: #fff !important; font-size: 0.85em;}
+
+.info-title.active, .info-title:hover { background: url(images/bg-sprite.png) no-repeat right -934px #474747; }
+
+.info-title div { color: #fff; }
+
+
+
+
+
+.left { float: left; }
+
+.right { float: right; }
+
+.clear { clear: both; }
+
+
+
+.no-clear{ clear: none; }
+
+
+
+
+
+
+
+
+
+
+
+/** Front-end CSS style **/
+
