@@ -1,5 +1,4 @@
 <?php
-
     $oOffer = new Offer();
     $oOfferImage = new OfferImage();
     $offerAll=$oOffer->findAllFrom("Offer","1=1 order by sequence");
