@@ -520,8 +520,7 @@ $('a[href*=#]').click(function() {
 $(window).load(function() {
 	rePositionDatePicker();
 	rePositionSliderNav();
-	// recalculateAbsoluteHeight();
-
+	recalculateAbsoluteHeight();
 });
 $(window).resize(function() {
 	rePositionDatePicker();
@@ -655,7 +654,7 @@ function recalculateAbsoluteHeight(){
 			var content = $(this).find('.room-inner');
 			var cimage = $(this).find('.room-content img');
 			var cimage_top = parseInt($(this).find('.room-content .inner').css('top'));
-	
+			// alert(content.height() + ' < ' + cimage.height())
 			if(content.height() < cimage.height()){
 				content.height(cimage.height() + cimage_top);
 			}
